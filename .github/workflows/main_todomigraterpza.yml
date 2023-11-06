@@ -61,6 +61,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'todomigraterpza'
-          slot-name: 'Production'
-          package: java-app/*.war # Referencing the artifact downloaded from build job
+            app-name: 'todomigraterpza'
+            slot-name: 'Production'
+            package: '${{ github.workspace }}/java-app/*.war'
+        
