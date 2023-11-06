@@ -63,5 +63,6 @@ jobs:
         with:
             app-name: 'todomigraterpza'
             slot-name: 'Production'
-            package: '${{ github.workspace }}/java-app/*.war'
+            package: '${{ github.workspace }}/*.war'
+        
         
