@@ -10,6 +10,16 @@ This is a simple Java Spring Boot application that manages a list of todos. The 
 
 - **Spring Boot**: The application is built using Spring Boot, which simplifies the setup and development of Spring applications.
 
+## Java Files
+
+- [`DemoApplication.java`](src/main/java/com/example/demo/DemoApplication.java): This is the main entry point of the Spring Boot application. It also includes a `CommandLineRunner` bean that initializes the `TodoRepository` with some todos.
+
+- [`Todo.java`](src/main/java/com/example/demo/Todo.java): This is the entity class that represents a todo. It includes fields for id, title, description, and done status, along with their getter and setter methods.
+
+- [`TodoController.java`](src/main/java/com/example/demo/TodoController.java): This is the controller class that handles HTTP requests for todo management. It includes methods for getting all todos, getting a todo by id, creating a todo, updating a todo, and deleting a todo by id.
+
+- [`TodoRepository.java`](src/main/java/com/example/demo/TodoRepository.java): This is the repository interface for performing CRUD operations on todos. It extends `JpaRepository`.
+
 ## GitHub Actions
 
 The project uses a GitHub Action workflow defined in `.github/workflows/main_todomigraterpza.yml` to automate the build and deployment of the application to Azure Web App.
