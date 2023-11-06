@@ -6,7 +6,7 @@ This is a simple Java Spring Boot application that manages a list of todos. The 
 
 - **Todo Management**: The application allows you to create, read, update, and delete todos. Each todo has a title, description, and a status indicating whether it is done or not.
 
-- **Database Persistence**: The application uses a MySQL database to persist the todos. The database connection details are configured in the `application.properties` file.
+- **Database Persistence**: The application uses a H2 database to persist the todos.
 
 - **Spring Boot**: The application is built using Spring Boot, which simplifies the setup and development of Spring applications.
 
