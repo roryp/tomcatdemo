@@ -1,5 +1,5 @@
 # Project
-
+![Image description](./images/image.png)
 This is a simple Java Spring Boot application that manages a list of todos. The application is built with Maven and uses a MySQL database for persistence.
 
 ## Main Features
